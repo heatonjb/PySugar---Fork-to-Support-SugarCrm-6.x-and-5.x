@@ -1,0 +1,6 @@
+This is a fork of the PySugar Project
+http://pypi.python.org/pypi/pysugar 
+
+Version 0.1 Includes Support for:
+- Sugar 6.xx
+- Improved Session Management
