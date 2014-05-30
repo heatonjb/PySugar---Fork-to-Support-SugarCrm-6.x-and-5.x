@@ -133,7 +133,7 @@ class SugarService(ElementSOAP.SoapService):
         response = self.call(action, request)
         result = response.find('return')
         error_element = result.find('error')
-        if not error_element.findtext('number') == '0':
+        if not error_element is None:
             # there was a problem we need to raise an exception
             raise SugarLoginError('number: %s, name: %s, desc: %s' % (
                     error_element.findtext('number'),
